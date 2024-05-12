@@ -1,0 +1,40 @@
+
+.container-support {
+   max-width: 50%;
+   margin: 0 auto;
+}
+
+form {
+    background-color: var(--navigation-primary);
+    border-radius: 25px;
+    padding: 2rem;
+}
+
+@media (max-width: 1455px)  {
+    .container-support {
+        max-width: 70%;
+     }
+}
+
+@media (max-width: 900px)  {
+    .container-support {
+        max-width: 90%;
+     }
+}
+
+@media (max-width: 550px)  {
+    form {
+        padding: 1rem;
+    }
+    .container-support {
+        max-width: 100%;
+    }
+
+    button {
+        width: 50%;
+    }
+}
+
+
+
+

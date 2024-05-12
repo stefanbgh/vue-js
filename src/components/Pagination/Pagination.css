@@ -1,0 +1,27 @@
+/* pagination */
+.pagination {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.pagination .page,
+.pagination .prev,
+.pagination .next,
+.pagination .active {
+	background: var(--navigation-primary);
+	color: var(--text-color);
+	border: none;
+	border-radius: 25px;
+	font-size: 0.9rem;
+	font-weight: bold;
+	padding: 0.5rem 1.25rem;
+	cursor: pointer;
+}
+
+.pagination .page.active {
+	background: var(--gradient-btn);
+	color: var(--text-color);
+}

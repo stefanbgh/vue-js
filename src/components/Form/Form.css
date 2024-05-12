@@ -1,0 +1,61 @@
+form {
+    display: flex;
+    flex-direction: column;
+    }
+      
+.form-group {
+margin-bottom: 20px;
+}
+    
+.form-row {
+display: flex;
+}
+    
+label {
+font-weight: bold;
+padding: 10px;
+}
+    
+    input,
+    textarea,
+    button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 7rem;
+    font-family: sans-serif;
+    resize: none;
+}
+
+
+input:nth-child(1){
+    margin-right: 2rem;
+}
+button {
+    width: 30%;
+    background: var(--gradient);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+    height: 2.4rem;
+}
+
+button:hover {
+    border: 2px solid purple;
+    color: purple;
+    background: none;
+}
+
+.error-message {
+    font-style: italic;
+    color: rgba(225,0,236,1);
+    margin-top: 5px;
+  }

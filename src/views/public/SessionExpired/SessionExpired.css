@@ -1,0 +1,39 @@
+.session-expired {
+    background: var(--darkpurple);
+    color: var(--text-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.session-expired .message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.session-expired .message h1 {
+    font-size: 2.5rem;
+}
+
+.session-expired .message h1 span {
+    background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+}
+
+.session-expired .link {
+    background: var(--gradient-btn);
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .75rem 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}

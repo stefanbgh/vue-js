@@ -1,0 +1,177 @@
+.atm-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .atm-ui {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--navigation-primary);
+    width: 46rem;
+    height: 30rem;
+    border-radius: 25px;
+    border: 2px solid  #6e00fa;
+    margin-right: 3rem;
+  }
+
+  .atm-section h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: .5rem;
+  }
+  .atm-section input {
+     border: none;
+     outline: none;
+     border-radius: 25px;
+     padding: .75rem 1.25rem;
+     margin-top: 1rem;
+     font-size: 1rem;
+  }
+  .atm-section button,
+  .atm-section a{
+      background-color: #6e00fa;
+      color: var(--text-color);
+      margin-top: 2rem;
+      font-size: 1.25em;
+      border: none;
+      border-radius: 25px;
+      padding: 0.50rem 1.25rem 0.50rem 1.25rem;
+      cursor: pointer;
+  }
+
+  
+  .withdraw-buttons,
+  .deposit-buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+    }
+    
+    .withdraw-buttons button,
+    .deposit-buttons button {
+        margin-right: 1rem;
+    }
+    
+ /*right side */
+
+    .atm-keyboard {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      height: 1rem;
+      margin-top: 4rem;
+    }
+    .atm-keyboard button:hover,
+    .atm-keyboard button:active{
+        background-color: var(--navigation-primary);
+      }
+
+      .atm-keyboard button {
+        font-size: 1.5rem;
+        padding: .75rem 1.25rem;
+        border-radius: 15px;
+        border: 2px solid #6e00fa;
+        background: var(--navigation-secondary);
+        color: var(--text-color);
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    /*media*/
+
+    @media (max-width:1350px) {
+        .atm-ui {
+          width: 40rem;
+        }
+
+        .atm-keyboard button {
+          font-size: 1rem;
+          padding: 1rem;
+          border-radius: 15px;
+      }
+    }
+
+     @media (max-width:1027px) {
+
+      .atm-ui {
+        width: 35rem;
+      }
+
+      .withdraw-buttons,
+      .deposit-buttons {
+        flex-wrap: wrap;
+      }
+        .atm-keyboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            width: 20%;
+        }
+
+        .atm-keyboard button {
+            font-size: 1.2rem;
+            padding: 1rem;
+            border-radius: 15px;
+        }
+      }
+
+      @media (max-width:925px) {
+        .atm-ui {
+          width: 30rem;
+        }
+      }
+
+    @media (max-width:850px) {
+        .atm-ui {
+          width: 35rem;
+          margin: 0 auto;
+          
+        }
+        .atm-section {
+            margin-bottom: 2rem;
+            margin: 0 auto;
+        }
+        .atm-container {
+            flex-direction: column;
+            padding-bottom: 18rem;
+          } 
+        .withdraw-buttons,
+        .deposit-buttons {
+           flex-wrap: wrap;
+        }
+
+        .atm-keyboard {
+          margin: 0 auto;
+          justify-content: center;
+          margin-top: 1rem;
+
+      }
+    }
+
+    @media (max-width:700px) {
+      .atm-ui {
+        width:25rem;
+      }
+    }
+
+    @media (max-width:525px) {
+      .atm-ui {
+        width:20rem;
+      }
+    }
+
+    @media (max-width:450px) {
+      .atm-ui {
+        width:17rem;
+      }
+    }
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+table {
+	width: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 1rem;
+}
+
+table thead tr th,
+table tbody tr td {
+	padding: 1.25rem;
+}
+
+table thead tr th {
+	background: var(--gradient);
+}
+
+/* table row width */
+table thead tr th:nth-child(1) {
+	width: 10%;
+}
+
+table thead tr th:nth-child(2) {
+	width: 55%;
+}
+
+table thead tr th:nth-child(3) {
+	width: 20%;
+}
+
+table thead tr th:nth-child(4) {
+	width: 15%;
+}
+/* table row width */
+
+table tbody tr td {
+	background: var(--navigation-secondary);
+	text-align: center;
+}
+
+table tbody tr td.resolve {
+	background: var(--navigation-primary);
+	text-align: center;
+}
+
+table tbody tr td.actions {
+	background: var(--navigation-secondary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: .5rem;
+}
+
+table tbody tr td.resolve.actions {
+	background: var(--navigation-primary);
+}
+
+table tbody tr td.actions .action {
+	color: var(--text-color);	
+}
+
+table tbody tr td.actions .action:hover {
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+	transition: .3s;
+}
+
+table tbody tr td.actions .status {
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+	font-size: 1rem;
+}
+
+table tbody tr td.type {
+	color: rgba(225, 0, 236, 1);
+}
+
+table tbody tr td i {
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+	font-size: 1.20rem;
+	cursor: pointer;
+}

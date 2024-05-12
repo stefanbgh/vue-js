@@ -1,0 +1,69 @@
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+}
+.cards .card {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	border-radius: 0.5rem;
+	width: 270px;
+	gap: 1rem;
+	background: var(--navigation-primary);
+}
+
+.cards .card .head {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-weight: bold;
+}
+
+.cards .card .body {
+	display: flex;
+	flex-direction: column;
+}
+
+.cards .card .body .price {
+	font-style: italic;
+	color: #c0c0c0;
+}
+
+.cards .card .negative,
+.cards .card .positive {
+	font-weight: bold;
+}
+
+.cards .card .negative {
+	color: rgba(225, 0, 236, 1);
+}
+
+.cards .card .positive {
+	color: rgb(157, 238, 157);
+}
+
+.cards .card .button {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.cards .card .button button {
+	gap: 1rem;
+	background: var(--gradient-btn);
+	border: none;
+	border-radius: 25px;
+	font-size: 1rem;
+	padding: 0.5rem 1.25rem;
+	color: var(--text-color);
+	cursor: pointer;
+	font-weight: bold;
+	width: 50%;
+}
+
+@media (max-width: 390px) {
+	.cards .card {
+		width: 200px;
+	}
+}

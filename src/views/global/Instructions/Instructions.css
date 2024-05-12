@@ -1,0 +1,80 @@
+.btn-link {
+    background: var(--gradient-btn);
+    width: 5em;
+    height: 2em;
+	margin-top: -0.2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+	padding-top: 0.35rem;
+	padding-left: 1rem;
+}
+.btn-link:hover {
+	border: 1px solid purple;
+}
+
+.btn {
+	background: var(--gradient-btn);
+    border-radius: 25px;
+	padding: 0.7rem;
+	font-size: 1.125rem;
+	color: #fff;
+	position: relative;
+	top: 3rem;
+	font-weight: bold;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.btn:hover {
+	border: 2px solid purple;
+	color: purple;
+	background: none;
+}
+
+.logo {
+   width: 150px;
+   margin-top: 0.7rem;
+   display: inline-block;
+   margin-left: 50px;
+   
+}
+
+footer .logo {
+   width: 150px;
+   height: 40px;
+   margin-top: 0.7rem;
+   display: inline-block;
+   margin-left: 50px;
+}
+
+
+/******************************************************** LEGAL **********************************************************/
+
+.legal {
+    background-color: var(--darkpurple);
+    height: auto;
+    color: var(--text-color);
+    padding: 5rem;
+}
+
+.legal h1 {
+    padding-top: 4rem;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.legal h4 {
+    font-size: 1.8rem;
+}
+
+.legal p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 650px) {
+    .legal {
+        padding: 3rem;
+    }
+}
+
+

@@ -1,0 +1,68 @@
+.image {
+    background: var(--navigation-primary);
+    border: 2px solid var(--text-color);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+ .remove-image {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--navigation-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1.75rem;
+    left: 1rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+ .remove-image:hover {
+    color: rgba(225, 0, 236, 1);
+    transition: .3s;
+}
+
+ .image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    object-position: center;
+    cursor: pointer;
+}
+
+ .image .image-file {
+	display: none;
+}
+
+.image i {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+ .image i {
+    background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+}
+
+@media (max-width: 410px) {
+    .image,
+    .image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .image i {
+        font-size: 2.5rem;
+    }
+}

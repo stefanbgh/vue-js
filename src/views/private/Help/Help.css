@@ -1,0 +1,29 @@
+
+.help-content h1{
+   font-size: 2rem;
+   margin-top: 7rem;
+}
+
+.help-content p {
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   font-size: 1.25rem;
+}
+
+
+.help-content a {
+   color: rgba(224, 0, 236, 0.874);
+}
+
+
+.help-content a:hover {
+    background-image: var(--gradient);
+	color: transparent;
+	-webkit-background-clip: text; 
+	background-clip: text;
+}
+
+
+.help-content a i {
+    margin-right: 10px;
+}

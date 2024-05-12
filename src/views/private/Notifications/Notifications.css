@@ -1,0 +1,40 @@
+/* sort & clear-history */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+section .sort {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+section .sort select {
+    background: var(--navigation-primary);
+    padding: .5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: .9rem;
+}
+section .clear-history button {
+    background: var(--gradient-btn);
+    border: none;
+    border-radius: 25px;
+    font-size: .9rem;
+    font-weight: bold;
+    padding: .75rem 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+section .sort select option {
+    background: var(--gradient);
+    padding: .5rem;
+}

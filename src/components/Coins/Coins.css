@@ -1,0 +1,5 @@
+.loader {
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+}

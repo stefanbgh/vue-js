@@ -1,0 +1,14 @@
+.loader {
+	width: 100%;
+	height: 100vh;
+	background: var(--darkpurple);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.loader h1 {
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+}

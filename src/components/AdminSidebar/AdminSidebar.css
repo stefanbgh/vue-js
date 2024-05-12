@@ -1,0 +1,159 @@
+.container .admin-sidebar {
+    min-width: 350px;
+    background: var(--navigation-secondary);
+}
+
+.container .admin-sidebar .profile,
+.container .admin-sidebar .navigation,
+.container .admin-sidebar .logout {
+    padding: 2rem;
+}
+
+.container .admin-sidebar .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(225,0,236,1) 0%, rgba(23,9,64,1) 75%);
+}
+
+.container .admin-sidebar .navigation {
+    display: flex;
+    flex-direction: column;
+    background: var(--navigation-primary);
+}
+
+.container .admin-sidebar .navigation a {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+}
+
+.container .admin-sidebar .navigation a.router-link-exact-active {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+.container .admin-sidebar .navigation a i {
+    font-size: 1.25rem;
+}
+
+.container .admin-sidebar .logout {
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(180deg, rgba(23,9,64,1) 0%, rgba(28,15,89,1) 50%);
+}
+
+.container .admin-sidebar .logout button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--gradient-btn);
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: .75rem 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.container .admin-sidebar .logout button i,
+.container .admin-sidebar .logout button p {
+    font-weight: bold;
+}
+
+.container .admin-sidebar .profile .image {
+    min-width: 100px;
+    min-height: 100px;
+    border: 2px solid var(--text-color);
+    background: var(--navigation-primary);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .admin-sidebar .profile .image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+.container .admin-sidebar .profile .image i {
+    font-size: 1.5rem;
+    background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+}
+
+@media (max-width: 1440px) {
+    .container .admin-sidebar {
+        min-width: 250px;
+    }
+
+    .container .admin-sidebar .profile .image {
+        min-width: 75px;
+        min-height: 75px;
+    }
+
+    .container .admin-sidebar .profile .image img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .container .admin-sidebar .profile .image i {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1240px) {
+    .container .admin-sidebar {
+        min-width: 37.5px;
+    }
+
+    .container .admin-sidebar .profile .image {
+        min-width: 25px;
+        min-height: 25px;
+    }
+
+    .container .admin-sidebar .profile .image img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .container .admin-sidebar .profile .image i {
+        font-size: .75rem;
+    }
+
+    .container .admin-sidebar .profile,
+    .container .admin-sidebar .navigation,
+    .container .admin-sidebar .logout {
+        padding: 1.75rem 1rem;
+    }
+
+    .container .admin-sidebar .logout {
+        justify-content: flex-start;
+    }
+
+    .container .admin-sidebar .logout button {
+        padding: 4px;
+    }
+
+    .container .admin-sidebar .profile div:not(.image),
+    .container .admin-sidebar .navigation a p,
+    .container .admin-sidebar .logout button p {
+        display: none;
+    }
+}
+
+@media (max-width: 625px) {
+    .container .admin-sidebar .profile,
+    .container .admin-sidebar .navigation,
+    .container .admin-sidebar .logout {
+        padding: 1.75rem .5rem;
+    }
+}

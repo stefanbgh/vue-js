@@ -1,0 +1,54 @@
+.container .content .info {
+    margin-bottom: 2rem;
+}
+
+.container .content .info h2 {
+    margin-bottom: 1.5rem;
+}
+
+.container .content .info .username span,
+.container .content .info .email span {
+    background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+}
+
+.container .content .buttons {
+    display: flex;
+    gap: .75rem;
+}
+
+.container .content .buttons button {
+    background: var(--gradient-btn);
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .75rem 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+@media (max-width: 410px) {
+    .container .content .info .image,
+    .container .content .info .image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container .content .info .image i {
+        font-size: 2.5rem;
+    }
+
+    .container .content .info h2 {
+        font-size: 1.25rem;
+    }
+
+    .container .content .info h3 {
+        font-size: 1rem;
+    }
+
+    .container .content .buttons {
+        flex-direction: column;
+    }
+}

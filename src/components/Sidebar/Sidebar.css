@@ -1,0 +1,182 @@
+.container .sidebar {
+    min-width: 350px;
+    background: var(--navigation-secondary);
+}
+
+.container .sidebar .profile,
+.container .sidebar .navigation,
+.container .sidebar .logout {
+    padding: 1.5rem 2rem;
+}
+
+.container .sidebar .profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.container .sidebar .profile div:not(.image) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .sidebar .profile div:not(.image) a {
+    background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+    font-size: 1.05rem;
+}
+
+.container .sidebar .profile div:not(.image) div .card {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    text-transform: capitalize;
+}
+
+.container .sidebar .profile div:not(.image) .username {
+    margin-top: .5rem;
+}
+
+.container .sidebar .profile .image {
+    min-width: 100px;
+    min-height: 100px;
+    border: 2px solid var(--text-color);
+    background: var(--navigation-primary);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sidebar .profile .image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+    object-position: center;
+}
+
+.container .sidebar .profile .image i {
+    font-size: 1.5rem;
+    background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+}
+
+.container .sidebar .navigation {
+    display: flex;
+    flex-direction: column;
+    background: var(--navigation-primary);
+}
+
+.container .sidebar .navigation a {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 0;
+}
+
+.container .sidebar .navigation a.router-link-exact-active {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+.container .sidebar .navigation a i {
+    font-size: 1.25rem;
+}
+
+.container .sidebar .logout {
+    display: flex;
+    justify-content: end;
+}
+
+.container .sidebar .logout button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--gradient-btn);
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    padding: .75rem 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.container .sidebar .logout button i,
+.container .sidebar .logout button p {
+    font-weight: bold;
+}
+
+@media (max-width: 1440px) {
+    .container .sidebar {
+        min-width: 250px;
+    }
+
+    .container .sidebar .profile .image {
+        min-width: 75px;
+        min-height: 75px;
+    }
+
+    .container .sidebar .profile .image img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .container .sidebar .profile .image i {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1240px) {
+    .container .sidebar {
+        min-width: 37.5px;
+    }
+
+    .container .sidebar .profile .image {
+        min-width: 25px;
+        min-height: 25px;
+    }
+
+    .container .sidebar .profile .image img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .container .sidebar .profile .image i {
+        font-size: .75rem;
+    }
+
+    .container .sidebar .profile,
+    .container .sidebar .navigation,
+    .container .sidebar .logout {
+        padding: 1.75rem 1rem;
+    }
+
+    .container .sidebar .logout {
+        justify-content: flex-start;
+    }
+
+    .container .sidebar .logout button {
+        padding: 4px;
+    }
+
+    .container .sidebar .profile div:not(.image),
+    .container .sidebar .navigation a p,
+    .container .sidebar .logout button p {
+        display: none;
+    }
+}
+
+@media (max-width: 625px) {
+    .container .sidebar .profile,
+    .container .sidebar .navigation,
+    .container .sidebar .logout {
+        padding: 1.75rem .5rem;
+    }
+}

@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.container .content {
+    width: 100%;
+    background: var(--darkpurple);
+    padding: 2rem;
+}

@@ -1,0 +1,10 @@
+:root {
+    --navigation-primary: #170940;
+    --navigation-secondary:#1c0f59;
+    --darkpurple:#040120;
+    --purple: #130749;
+    --gradient: linear-gradient(180deg, rgba(63,0,250,1) 0%, hsl(297, 100%, 46%) 65%);
+    --gradient-btn: linear-gradient(180deg, rgba(63,0,250,1) 0%, rgba(225,0,236,1) 80%);
+    --text-color: #fff;
+}
+

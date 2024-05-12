@@ -1,0 +1,205 @@
+.register {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    color: var(--text-color);
+}
+
+.register .left-side {
+    width: 65%;
+    background: var(--darkpurple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register .left-side .logo {
+    margin-bottom: .5rem;
+}
+
+.register .left-side h2 {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+.register .left-side h2 span {
+    color: var(--text-color);
+}
+
+.register .left-side .media-question {
+    display: none;
+}
+
+.register .left-side form {
+    min-width: 600px;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register .left-side h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.register .left-side form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register .left-side form div .error {
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    color: rgba(225,0,236,1);
+    font-style: italic;
+}
+
+.register .left-side form div.password div,
+.register .left-side form div.pin div {
+    position: relative;
+}
+
+.register .left-side form div.password div input,
+.register .left-side form div.pin div input {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.register .left-side form div.password div i,
+.register .left-side form div.pin div i {
+    position: absolute;
+    top: 50%;
+    right: .5rem;
+    transform: translate(-50%, -50%);
+    color: #000;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.register .left-side form div.legal {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.register .left-side form div label {
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.register .left-side form div label p a {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+}
+
+.register .left-side form div input {
+    padding: .75rem 1rem;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.register .left-side form .check input {
+    cursor: pointer;
+    width: 1.1rem;
+    height: 1.1rem;
+    accent-color: rgba(225,0,236,1);
+    margin-right: .25rem;
+}
+
+.register .left-side form .button {
+    background: var(--gradient-btn);
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .75rem 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.register .left-side form .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.register .left-side form .buttons button:not(.button) {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.register .left-side .step3 .buttons {
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media (max-width: 1142px) {
+    .register .left-side {
+        width: 100%;
+    }
+
+    .register .left-side .media-question {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    .register .left-side h4 {
+        font-size: 1.15rem;
+    }
+
+    .register .left-side .media-question a {
+        background: var(--gradient);
+        background-clip: text;
+        color: transparent;
+        font-size: 1.25rem;
+    }
+
+    .register .right-side {
+        display: none;
+    }
+
+}
+
+@media (max-width: 762px) {
+    .register .left-side form {
+        min-width: 500px;
+        padding: 2rem;
+    }
+
+    .register .left-side form div.legal {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 525px) {
+    .register .left-side form {
+        min-width: 100%;
+    }
+
+    .register .left-side form div label.check p br {
+        display: none;
+    }
+}

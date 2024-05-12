@@ -1,0 +1,30 @@
+.register .right-side,
+.login .right-side {
+    width: 35%;
+    background: var(--navigation-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register .right-side .question,
+.login .right-side .question {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.register .right-side h4,
+.login .right-side h4 {
+    font-size: 1.15rem;
+}
+
+.register .right-side .question a,
+.login .right-side .question a {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}

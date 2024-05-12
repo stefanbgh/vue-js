@@ -1,0 +1,106 @@
+.container .content .cards {
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.container .content .cards .card {
+	position: relative;
+	width: 450px;
+	height: 225px;
+	border-radius: 25px;
+	border-top: 2.5px solid rgba(225, 0, 236, 1);
+	background: linear-gradient(
+		180deg,
+		var(--navigation-primary) 60%,
+		var(--navigation-secondary) 100%
+	);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.container .content .cards .card .employee {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.container .content .cards .card .employee i {
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+}
+
+.container .content .cards .card .info {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.container .content .cards .card .info .username,
+.container .content .cards .card .info .email {
+	display: flex;
+	align-items: center;
+	gap: .25rem;
+}
+
+.container .content .cards .card .info .username p:last-child,
+.container .content .cards .card .info .email p:last-child {
+	background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+}
+
+.container .content .cards .card button {
+    background: var(--gradient-btn);
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    padding: .75rem 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.container .content .cards .card .delete {
+    position: absolute;
+	top: 1rem;
+	right: 1rem;
+	cursor: pointer;
+	font-size: 1.1rem;
+	transition: .3s;
+}
+
+.container .content .cards .card .delete:hover {
+	color: rgba(225, 0, 236, 1);
+	transition: .3s;
+}
+
+@media (max-width: 570px) {
+	.container .content .cards {
+		gap: 1.5rem;
+	}
+
+	.container .content .cards .card {
+		width: 350px;
+	}
+}
+
+@media (max-width: 475px) {
+	.container .content .cards .card {
+        width: 225px;
+        height: 250px;
+	}
+
+	.container .content .cards .card .info .username,
+	.container .content .cards .card .info .email {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}

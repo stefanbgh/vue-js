@@ -1,0 +1,15 @@
+/* e.g. */
+a {
+    text-decoration: none;
+}
+
+.btn-link {
+    background: var(--gradient);
+    width: 5em;
+    height: 2em;
+    margin-right: 2rem;
+    margin-top: -0.1rem;
+    border: none;
+    border-radius: 20%;
+    font-size: 1rem;
+}

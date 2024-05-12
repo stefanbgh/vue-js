@@ -1,0 +1,28 @@
+------------------------------------------------------------------------------------
+What is eCoinWall card?
+
+The eCoinWall card is our virtual solution to help you store money
+(an alternative wallet, but in our original way).
+
+With the eCoinWall card and our ATM system, you can deposit and withdraw dollars.
+
+------------------------------------------------------------------------------------
+How to use ATM?
+
+Usage of an ATM in our system is similar to a real-life ATM. 
+
+On your right side, there is a screen or, if you're using a phone, it is located below the numbers.
+You have numbers that give you one more opportunity to enter the amount for a custom money deposit or withdrawal.
+------------------------------------------------------------------------------------
+How transaction system works?
+
+With our transaction system, you can send money to other users and sell your coins to obtain dollars.
+------------------------------------------------------------------------------------
+
+Why must withdrawing money from the card be approved by the admin?
+
+Our wallet system is one of the most certified wallets on the web3.
+When withdrawing money, our company is taking a risk and assuming all responsibilities, not the user."
+
+------------------------------------------------------------------------------------
+

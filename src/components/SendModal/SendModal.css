@@ -1,0 +1,172 @@
+/* disable number input arrows */
+.no-spinners {
+    -moz-appearance: textfield;
+ }
+ 
+ .no-spinners::-webkit-outer-spin-button,
+ .no-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+ }
+ /* disable number input arrows */
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #04012090;
+}
+
+.modal .form {
+	width: 550px;
+	height: 400px;
+	background: linear-gradient(135deg, rgba(225,0,236,1) 0%, rgba(28,15,89,1) 24%);
+    padding: 1rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border-left: 5px solid rgba(225, 0, 236, 1);
+    border-top: 2.5px solid rgba(225, 0, 236, 1);
+}
+
+.modal .form .send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.modal .form .send h2 {
+    margin-bottom: 1rem;
+}
+
+/* recipient */
+.modal .form .send .recipient {
+    display: flex;
+    width: 100%;
+    margin-top: .75rem;
+    margin-bottom: .25rem;
+}
+
+.modal .form .send .recipient div {
+    width: 17.5%;
+    background: var(--navigation-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 0 0 25px;
+}
+
+.modal .form .send .recipient input {
+    width: 82.5%;
+    display: flex;
+    align-items: center;
+    background: var(--text-color);
+    outline: none;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    font-size: 1rem;
+}
+
+.modal .form .send .recipient div,
+.modal .form .send .recipient input {
+    padding: .75rem 1rem;
+}
+
+/* error message */
+.modal .form .send .err-msg {
+    width: 100%;
+    background: var(--gradient);
+	background-clip: text;
+	color: transparent;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* quantity */
+.modal .form .send .quantity {
+    display: flex;
+    width: 100%;
+    margin-top: .75rem;
+    margin-bottom: .25rem;
+}
+
+.modal .form .send .quantity div,
+.modal .form .send .quantity input {
+    padding: .5rem 1rem;
+}
+
+.modal .form .send .quantity div {
+    background: var(--navigation-primary);
+    color: var(--text-color);
+    width: 20%;
+    text-align: center;
+    border-radius: 0 25px 25px 0;
+}
+
+.modal .form .send .quantity input {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background: var(--text-color);
+    outline: none;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+/* buttons */
+.modal .form .send .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal .form .send .buttons .button {
+    background: var(--gradient-btn);
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .75rem 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.modal .form .send .buttons button:not(.button) {
+    background: transparent;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media (max-width: 625px) {
+    .modal .form {
+        width: 450px;
+        height: 350px;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 365px) {
+    .modal .form {
+        padding: 1rem;
+    }
+}
